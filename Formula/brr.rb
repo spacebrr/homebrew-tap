@@ -1,52 +1,35 @@
 class Brr < Formula
   desc "Draft your swarm"
   homepage "https://spacebrr.com"
-  version "0.3.24"
+  version "0.3.27"
   license :cannot_represent
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://releases.spacebrr.com/v0.3.24/brr-darwin-arm64"
-      sha256 "98e8d88caa165a88e7176e3a8f6273deb1df015c70f6801c37b47d7804113645"
+      url "https://releases.spacebrr.com/v0.3.27/brr-darwin-arm64"
+      sha256 "e08c73ac1f1a023182b782aa2032cd476f4220aa24acfa6be4f2a8eb255407f8"
 
       resource "brr-daemon" do
-        url "https://releases.spacebrr.com/v0.3.24/brr-daemon-darwin-arm64"
-        sha256 "fe317a13433969d0391254172cfb8c062808cbe4ef9501433fd24a1146da7cba"
+        url "https://releases.spacebrr.com/v0.3.27/brr-daemon-darwin-arm64"
+        sha256 "aa8ae9c8f5db871e58466408697bcc54e4ee4e2179fe22912fbfbc2d8530bfd8"
       end
 
       resource "brr-spawn" do
-        url "https://releases.spacebrr.com/v0.3.24/brr-spawn-darwin-arm64"
-        sha256 "37ab1020ba81fd18878a43e5b3cd8399c8e5f27f183541c754cdc19a9e3bea5e"
+        url "https://releases.spacebrr.com/v0.3.27/brr-spawn-darwin-arm64"
+        sha256 "596b77cd4ebc795ab336a0c578e1abac100118e0a111bc6b48d02de4ef15eee7"
       end
     else
-      url "https://releases.spacebrr.com/v0.3.24/brr-darwin-amd64"
-      sha256 "0f3a517445f4909e19bf289cea2b47aea9297cb73ba04fa4175cd344966402f6"
+      url "https://releases.spacebrr.com/v0.3.27/brr-darwin-amd64"
+      sha256 "54fe8e28a7ee33aa185f2262b873adc91c33f56b156466d921c364c1670fea79"
 
       resource "brr-daemon" do
-        url "https://releases.spacebrr.com/v0.3.24/brr-daemon-darwin-amd64"
-        sha256 "cded27c76cae69d6d7922bf91e6f2477cd73b5dc6fc690f3ddc8d7821f0293a3"
+        url "https://releases.spacebrr.com/v0.3.27/brr-daemon-darwin-amd64"
+        sha256 "e49d525a2826ca3f73a9e1d6c8743d73e538d5df1afce92d9485b4023d942b7a"
       end
 
       resource "brr-spawn" do
-        url "https://releases.spacebrr.com/v0.3.24/brr-spawn-darwin-amd64"
-        sha256 "3fb9fed660708654763d06004264c9cccd936c0f8637bcd7a88f58ebfd1dc74c"
-      end
-    end
-  end
-
-  on_linux do
-    if Hardware::CPU.intel?
-      url "https://releases.spacebrr.com/v0.3.24/brr-linux-amd64"
-      sha256 "af7a58a56e6931b367c5e86f5f56780c0efad3b856694baf2cd0fd3f99414f80"
-
-      resource "brr-daemon" do
-        url "https://releases.spacebrr.com/v0.3.24/brr-daemon-linux-amd64"
-        sha256 "2aff254ad659e3572cb431cf2036cd01a365800b55694037a7fe3e1cdc47c032"
-      end
-
-      resource "brr-spawn" do
-        url "https://releases.spacebrr.com/v0.3.24/brr-spawn-linux-amd64"
-        sha256 "ab29672761da4763111a49b25f503cc201a18db73d807770edf02b34226ae1e3"
+        url "https://releases.spacebrr.com/v0.3.27/brr-spawn-darwin-amd64"
+        sha256 "31521f3b34963003d12e072eafa619cd53ac8cd8eef98a1b70bff432acc11443"
       end
     end
   end
