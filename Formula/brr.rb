@@ -15,29 +15,29 @@ class Brr < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://releases.spacebrr.com/v0.3.36/brr-darwin-arm64"
-      sha256 "0eecad1fe2277e5f116c610d0a4d2f021438b64d4207a40c4d95f72123c36ad6"
+      sha256 "17e0fe6f2ae5032da45de7387125ca3c23804d7805be96461865030672b15611"
 
       resource "brr-daemon" do
         url "https://releases.spacebrr.com/v0.3.36/brr-daemon-darwin-arm64"
-        sha256 "63078d3cb6e26b45211618e7523376c2413e892433d74d4221acfdd05f39d4e0"
+        sha256 "89fb8377f3e605cdbc603335463401f34e6690f89067b5da559dfc3eceba4998"
       end
 
       resource "brr-spawn" do
         url "https://releases.spacebrr.com/v0.3.36/brr-spawn-darwin-arm64"
-        sha256 "f6195236cde4a880f014f7378c1928c56de7321ad6cdb73a71cea2d3ade48c72"
+        sha256 "999c18c8700d20ca767c9784d8a872c89b9b2dc12ea07a058f5836a84562a4f3"
       end
     else
       url "https://releases.spacebrr.com/v0.3.36/brr-darwin-amd64"
-      sha256 "f030c02f8dbaa51fb4a91d137eb4fee6bcb62d530bb540ff912e4da1983fe38a"
+      sha256 "53e54f6739dd8876a4540204d82740bc5bb2c20745b0be2ca27f75fc57960b78"
 
       resource "brr-daemon" do
         url "https://releases.spacebrr.com/v0.3.36/brr-daemon-darwin-amd64"
-        sha256 "4834f32597bf2d7712c81aa78c47f1a461775e4c2edcdd661e005412e80f9684"
+        sha256 "5d4042d455a24e9debf30810ee9828c1439608a5e4347ebf1f56bee44b081e70"
       end
 
       resource "brr-spawn" do
         url "https://releases.spacebrr.com/v0.3.36/brr-spawn-darwin-amd64"
-        sha256 "675efceb48571113d45eea8c2496fea1965dbe9674ba3ed4bbd79b1c9013d9df"
+        sha256 "bbbe6fb4247ac45cbd7c3357771df1d73565ff1208e11a81f608fe073f50501f"
       end
     end
   end
