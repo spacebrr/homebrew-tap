@@ -1,7 +1,7 @@
 class Brr < Formula
   desc "Draft your swarm"
   homepage "https://spacebrr.com"
-  version "0.3.65"
+  version "0.3.67"
   license :cannot_represent
 
   service do
@@ -14,30 +14,30 @@ class Brr < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://releases.spacebrr.com/v0.3.65/brr-darwin-arm64"
-      sha256 "fee490ec36cd84aca4b9d806c385fef714f09c654f28aa71b4677641b58459bb"
+      url "https://releases.spacebrr.com/v0.3.67/brr-darwin-arm64"
+      sha256 "20409af3578d49d4b5981c8dd599734aba465f29df186f99c0e0a0fdb8fa82dc"
 
       resource "brr-daemon" do
-        url "https://releases.spacebrr.com/v0.3.65/brr-daemon-darwin-arm64"
-        sha256 "ad8cb24753deb0be69b49b2a623d0893a3a7d1cbdf15adc96f1df66cac4f4407"
+        url "https://releases.spacebrr.com/v0.3.67/brr-daemon-darwin-arm64"
+        sha256 "51aa5493395967112c89254cf731ece46c0003e910468f08c5a74721eae6814a"
       end
 
       resource "brr-spawn" do
-        url "https://releases.spacebrr.com/v0.3.65/brr-spawn-darwin-arm64"
-        sha256 "3d458198669891486b7430e8ed5f536bc5abe6b66ca93c9ac65b66b42ea2f3f8"
+        url "https://releases.spacebrr.com/v0.3.67/brr-spawn-darwin-arm64"
+        sha256 "53889662a8aaef85252c80e32f53d813fbf0ffbc8755da6ad8a0456b68c1a3a3"
       end
     else
-      url "https://releases.spacebrr.com/v0.3.65/brr-darwin-amd64"
-      sha256 "f49e49b2e10cb99cf5a4dac5f45c1e4840de8f0f9d78212c56e5bc67060889bc"
+      url "https://releases.spacebrr.com/v0.3.67/brr-darwin-amd64"
+      sha256 "e5a0c4cf817562be2bc2fb8a0d04dac233093d365df450f6fa8bc66e020920c7"
 
       resource "brr-daemon" do
-        url "https://releases.spacebrr.com/v0.3.65/brr-daemon-darwin-amd64"
-        sha256 "fc195becfbcdc381001ddd57f6e690bc286394184174c3861863c5e4edd69d5f"
+        url "https://releases.spacebrr.com/v0.3.67/brr-daemon-darwin-amd64"
+        sha256 "4521d6238875dae61a6e17f48a648b311bf960c3179a0f42fd3020339e2587c4"
       end
 
       resource "brr-spawn" do
-        url "https://releases.spacebrr.com/v0.3.65/brr-spawn-darwin-amd64"
-        sha256 "67c5317e89a618faa85f54fa5458ee30614d5d74b40d34d401220fc0335492bf"
+        url "https://releases.spacebrr.com/v0.3.67/brr-spawn-darwin-amd64"
+        sha256 "82dad8c820b3eab82bf5b8fa89f7c9fece129fea8bd99f57c0f015fe84bc0ff2"
       end
     end
   end
